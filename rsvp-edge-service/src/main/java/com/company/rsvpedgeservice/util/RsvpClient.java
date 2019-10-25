@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@FeignClient(name = "rsvp-backing")
+@FeignClient(name = "rsvp-service")
 public interface RsvpClient {
 
     @PostMapping(value = "/rsvps")
