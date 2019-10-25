@@ -24,11 +24,11 @@ public interface RsvpClient {
     @ResponseStatus(HttpStatus.OK)
     public Rsvp findRsvpById(@PathVariable int id);
 
-    @PutMapping(value = "/rsvp")
+    @PutMapping(value = "/rsvps")
     @ResponseStatus(HttpStatus.OK)
     public void updateRsvp(@RequestBody @Valid Rsvp rsvp);
 
-    @DeleteMapping(value = "/rsvp/{id}")
+    @DeleteMapping(value = "/rsvps/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void deleteRsvp(@PathVariable int id);
 

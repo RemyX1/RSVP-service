@@ -17,6 +17,12 @@ public class RsvpController {
     @Autowired
     ServiceLayer service;
 
+    /** *
+     * Rsvp controller used to pass in an Rsvp request body to save to database
+     *
+     */
+
+
     @RequestMapping(value = "/rsvp", method = RequestMethod.POST)
     public Rsvp createRsvp(@RequestBody Rsvp rsvp) {
 

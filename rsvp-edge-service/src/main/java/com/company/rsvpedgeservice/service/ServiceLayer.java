@@ -18,6 +18,13 @@ public class ServiceLayer {
         this.client = client;
     }
 
+
+    /**
+     *
+     * @param rsvp
+     * @return
+     */
+
     public Rsvp createRsvp(Rsvp rsvp) {
 
     return client.saveRsvp(rsvp);
